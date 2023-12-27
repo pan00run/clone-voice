@@ -228,7 +228,7 @@ def checkupdate():
     return jsonify({'code':0,"msg":cfg.updatetips})
 
 if __name__ == '__main__':
-    web_address = os.getenv('WEB_ADDRESS', '127.0.0.1:9988')
+    web_address = os.getenv('WEB_ADDRESS', '0.0.0.0:9988')
     tts_thread = None
     sts_thread = None
     try:
